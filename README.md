@@ -11,16 +11,16 @@ Steps to implement the JWT token:
 
 4) Create a JWTAuthenticationFilter that extends OncePerRequestFilter and overrides the method, and write the logic to check the token that is coming in the header. We have to write five important logic
 
-          a -Get Token from the request
+          a -Get a Token from the request
           b-Validate Token
           c -GetUsername from token
           d the user associated with this token
           e-set authentication
 
-5) Configure spring security in configuration file:
+5) Configure spring security in a configuration file:
 
-6) Create a JWTRequest and a JWTResponse to receive request data and send a Login success response.
+6) Create a JWTRequest and a JWTResponse to receive request data and send a login success response.
 
-7)  Create login API to accept username and password and return token if username and password are correct.
+7) Create a login API to accept username and password and return a token if the username and password are correct.
 
-8) Test Application.
+8) Test the application.
