@@ -16,9 +16,7 @@ public class AppConfig {
     public UserDetailsService userDetailsService(){
 
       UserDetails userDetails1 = User.builder().username("Khushi").password(passwordEncoder().encode("abc")).roles("ADMIN").build();
-
       UserDetails userDetails2 = User.builder().username("Pratiksha").password(passwordEncoder().encode("12345")).roles("NORMAL").build();
-
       return new InMemoryUserDetailsManager(userDetails1,userDetails2);
     }
 
